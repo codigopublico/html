@@ -1,11 +1,39 @@
 <html>
 	<head>
-		<title>Think bu nothing</title>
+		<title>Think by nothing</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
+		<script src="js/jquery-1.6.4.min.js"></script>
+    		<script src="js/lib/moment.min.js"></script>
+    		<script src="js/jquery.rss.js"></script>
+    		<script>
+
+      		jQuery(function($) {
+        		$("#rss-feeds").rss("https://gnusocial.net/api/statuses/friends_timeline/pensar1984.rss", {
+          		limit: 2,
+          		effect: 'slideFastSynced'
+        		})
+      		})
+		jQuery(function($) {
+                        $("#rss-feed2").rss("http://newsrss.bbc.co.uk/rss/spanish/international/rss.xml", {
+                        limit: 2,
+                        effect: 'slideFastSynced'
+                        })
+                })
+		jQuery(function($) {
+                        $("#rss-feed3").rss("http://www.eluniversal.com.mx/rss/computo.xml", {
+                        limit: 2,
+                        effect: 'slideFastSynced'
+                        })
+                })
+    		</script>
+
+
+
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
@@ -49,10 +77,10 @@
 				<p>Esta es <strong>mi web de contacto</strong></p>
 				<hr />
 				<div class="row">
-					<section class="4u">
-						<span class="pennant"><span class="fa fa-briefcase"></span></span>
-						<h3>Informacion corta</h3>
-						<p>Aqui tiene que ir la poca inforacion.</p>
+					<section class="6u">
+						<p><strong><h1>Computacion</h1></strong></p>
+						<div id="rss-feed3"></div>
+                                                </div>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
 
@@ -66,20 +94,23 @@
 
 				<div class="row">
 					<section class="6u">
-						<IFRAME src="https://gs.smuglo.li/safebot" frameborder="No" style="FILTER: chroma(color=#FFFFFF)" allowtransparency="true">
-</IFRAME> 
-						<header>
-							<h2>Hola</h2>
-						</header>
-						<p>Hola de nueva</p>
+						<div>
+                                                <h1>Noticias</h1>
+                                                <div id="rss-feed2"></div>
+                                                </div>
+                                                <header>
+                                                        <h2>del mundo</h2>
+                                                </header>
+
 					</section>	
 					<section class="6u">
-						<IFRAME src="https://gs.smuglo.li/safebot" frameborder="No" style="FILTER: chroma(color=#FFFFFF)" allowtransparency="true">
-</IFRAME> 
+						<div>
+      						<h1>Noticias</h1>
+      						<div id="rss-feeds"></div>
+    						</div>
 						<header>
-							<h2>Mi gnusocail</h2>
+							<h2>de gnusocial</h2>
 						</header>
-						<p>Gnusocials</p>
 					</section>				
 				</div>
 			

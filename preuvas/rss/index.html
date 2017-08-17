@@ -1,1 +1,104 @@
+<html>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">How to parse a RSS feed using javascript? - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/question/10943544" type="application/atom+xml" />
+        <link rel="hub" href="http://pubsubhubbub.appspot.com/" />        
+    <link rel="alternate" href="https://stackoverflow.com/q/10943544" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2012-06-08T06:36:47Z</updated>
+    <id>https://stackoverflow.com/feeds/question/10943544</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/10943544</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">How to parse a RSS feed using javascript?</title>
+        <category scheme="https://stackoverflow.com/feeds/question/10943544/tags" term="javascript"/><category scheme="https://stackoverflow.com/feeds/question/10943544/tags" term="html5"/><category scheme="https://stackoverflow.com/feeds/question/10943544/tags" term="jquery-mobile"/>
+        <author>
+            <name>Thiru</name>
+            <uri>https://stackoverflow.com/users/1126255</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/10943544/how-to-parse-a-rss-feed-using-javascript" />
+        <published>2012-06-08T05:34:16Z</published>
+        <updated>2012-06-08T06:35:22Z</updated>
+        <summary type="html">
+            &lt;p&gt;I need to parse the RSS-Feed(XML version2.0) using XML and I want to display the parsed detail in HTML page, I tried in many ways. But its not working. My system is running under proxy, since I am new to this field, I don&#39;t know whether it is possible or not. If any one knows please help me on this. Thanks in advance.&lt;/p&gt;
 
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/questions/10943544/-/10943610#10943610</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Answer by haylem for How to parse a RSS feed using javascript?</title>
+        <author>
+            <name>haylem</name>
+            <uri>https://stackoverflow.com/users/453590</uri>
+        </author>    
+        <link rel="alternate" href="https://stackoverflow.com/questions/10943544/how-to-parse-a-rss-feed-using-javascript/10943610#10943610" />
+        <published>2012-06-08T05:43:24Z</published>   
+        <updated>2012-06-08T06:35:22Z</updated>
+        <summary type="html">&lt;h1&gt;Parsing the Feed&lt;/h1&gt;
+
+&lt;h3&gt;With jQuery&#39;s jFeed&lt;/h3&gt;
+
+&lt;p&gt;Try this, with the &lt;a href=&quot;http://plugins.jquery.com/project/jFeed&quot; rel=&quot;nofollow&quot;&gt;jFeed&lt;/a&gt; &lt;a href=&quot;http://www.jquery.com/&quot; rel=&quot;nofollow&quot;&gt;jQuery&lt;/a&gt; plug-in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jQuery.getFeed({
+   url     : FEED_URL,
+   success : function (feed) {
+      console.log(feed.title);
+      // do more stuff here
+   }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;With jQuery&#39;s Built-in XML Support&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$.get(FEED_URL, function (data) {
+    $(data).find(&quot;entry&quot;).each(function () { // or &quot;item&quot; or whatever suits your feed
+        var el = $(this);
+
+        console.log(&quot;------------------------&quot;);
+        console.log(&quot;title      : &quot; + el.find(&quot;title&quot;).text());
+        console.log(&quot;author     : &quot; + el.find(&quot;author&quot;).text());
+        console.log(&quot;description: &quot; + el.find(&quot;description&quot;).text());
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;With jQuery and the Google AJAX APIs&lt;/h3&gt;
+
+&lt;p&gt;Otherwise, &lt;a href=&quot;https://developers.google.com/feed/&quot; rel=&quot;nofollow&quot;&gt;Google&#39;s AJAX Feed API&lt;/a&gt; allows you to get the feed as a JSON object:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$.ajax({
+  url      : document.location.protocol + &#39;//ajax.googleapis.com/ajax/services/feed/load?v=1.0&amp;amp;num=10&amp;amp;callback=?&amp;amp;q=&#39; + encodeURIComponent(FEED_URL),
+  dataType : &#39;json&#39;,
+  success  : function (data) {
+    if (data.responseData.feed &amp;amp;&amp;amp; data.responseData.feed.entries) {
+      $.each(data.responseData.feed.entries, function (i, e) {
+        console.log(&quot;------------------------&quot;);
+        console.log(&quot;title      : &quot; + e.title);
+        console.log(&quot;author     : &quot; + e.author);
+        console.log(&quot;description: &quot; + e.description);
+      });
+    }
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But that means you&#39;re relient on them being online and reachable.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1&gt;Building Content&lt;/h1&gt;
+
+&lt;p&gt;Once you&#39;ve successfully extracted the information you need from the feed, you need to create document fragments containing the elements you&#39;ll want to inject to display your data.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1&gt;Injecting the content&lt;/h1&gt;
+
+&lt;p&gt;Select the container element that you want on the page and append your document fragments to it, and simply use innerHTML to replace its content entirely.&lt;/p&gt;
+</summary>
+    </entry></feed>
+</html>
