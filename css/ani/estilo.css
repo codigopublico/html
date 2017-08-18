@@ -1,0 +1,453 @@
+.ground {
+  position: relative;
+  width: 18em;
+  height: 18em;
+  font-size: 3vmin;
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.ground:hover * {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.ground:active * {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.axis {
+  --basic-transform: rotate(var(--angle));
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  -webkit-transform: var(--basic-transform) rotateX(0deg);
+          transform: var(--basic-transform) rotateX(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotate 7.2s linear infinite;
+          animation: rotate 7.2s linear infinite;
+  -webkit-animation-delay: calc(var(--delay));
+          animation-delay: calc(var(--delay));
+}
+.axis:nth-of-type(1) {
+  --angle: -21.17647deg;
+  --delay: -0.21176s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(1) {
+    -webkit-animation-delay: -0.21176s;
+            animation-delay: -0.21176s;
+  }
+}
+.axis:nth-of-type(2) {
+  --angle: -42.35294deg;
+  --delay: -0.42353s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(2) {
+    -webkit-animation-delay: -0.42353s;
+            animation-delay: -0.42353s;
+  }
+}
+.axis:nth-of-type(3) {
+  --angle: -63.52941deg;
+  --delay: -0.63529s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(3) {
+    -webkit-animation-delay: -0.63529s;
+            animation-delay: -0.63529s;
+  }
+}
+.axis:nth-of-type(4) {
+  --angle: -84.70588deg;
+  --delay: -0.84706s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(4) {
+    -webkit-animation-delay: -0.84706s;
+            animation-delay: -0.84706s;
+  }
+}
+.axis:nth-of-type(5) {
+  --angle: -105.88235deg;
+  --delay: -1.05882s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(5) {
+    -webkit-animation-delay: -1.05882s;
+            animation-delay: -1.05882s;
+  }
+}
+.axis:nth-of-type(6) {
+  --angle: -127.05882deg;
+  --delay: -1.27059s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(6) {
+    -webkit-animation-delay: -1.27059s;
+            animation-delay: -1.27059s;
+  }
+}
+.axis:nth-of-type(7) {
+  --angle: -148.23529deg;
+  --delay: -1.48235s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(7) {
+    -webkit-animation-delay: -1.48235s;
+            animation-delay: -1.48235s;
+  }
+}
+.axis:nth-of-type(8) {
+  --angle: -169.41176deg;
+  --delay: -1.69412s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(8) {
+    -webkit-animation-delay: -1.69412s;
+            animation-delay: -1.69412s;
+  }
+}
+.axis:nth-of-type(9) {
+  --angle: -190.58824deg;
+  --delay: -1.90588s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(9) {
+    -webkit-animation-delay: -1.90588s;
+            animation-delay: -1.90588s;
+  }
+}
+.axis:nth-of-type(10) {
+  --angle: -211.76471deg;
+  --delay: -2.11765s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(10) {
+    -webkit-animation-delay: -2.11765s;
+            animation-delay: -2.11765s;
+  }
+}
+.axis:nth-of-type(11) {
+  --angle: -232.94118deg;
+  --delay: -2.32941s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(11) {
+    -webkit-animation-delay: -2.32941s;
+            animation-delay: -2.32941s;
+  }
+}
+.axis:nth-of-type(12) {
+  --angle: -254.11765deg;
+  --delay: -2.54118s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(12) {
+    -webkit-animation-delay: -2.54118s;
+            animation-delay: -2.54118s;
+  }
+}
+.axis:nth-of-type(13) {
+  --angle: -275.29412deg;
+  --delay: -2.75294s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(13) {
+    -webkit-animation-delay: -2.75294s;
+            animation-delay: -2.75294s;
+  }
+}
+.axis:nth-of-type(14) {
+  --angle: -296.47059deg;
+  --delay: -2.96471s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(14) {
+    -webkit-animation-delay: -2.96471s;
+            animation-delay: -2.96471s;
+  }
+}
+.axis:nth-of-type(15) {
+  --angle: -317.64706deg;
+  --delay: -3.17647s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(15) {
+    -webkit-animation-delay: -3.17647s;
+            animation-delay: -3.17647s;
+  }
+}
+.axis:nth-of-type(16) {
+  --angle: -338.82353deg;
+  --delay: -3.38824s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(16) {
+    -webkit-animation-delay: -3.38824s;
+            animation-delay: -3.38824s;
+  }
+}
+.axis:nth-of-type(17) {
+  --angle: -360deg;
+  --delay: -3.6s;
+}
+@supports (-moz-appearance: meterbar) and (display: flex) {
+  .axis:nth-of-type(17) {
+    -webkit-animation-delay: -3.6s;
+            animation-delay: -3.6s;
+  }
+}
+@-webkit-keyframes rotate {
+  0%,
+    12% {
+    -webkit-transform: var(--basic-transform) rotateX(0deg);
+            transform: var(--basic-transform) rotateX(0deg);
+  }
+  38%,
+    62% {
+    -webkit-transform: var(--basic-transform) rotateX(180deg);
+            transform: var(--basic-transform) rotateX(180deg);
+  }
+  88%,
+    100% {
+    -webkit-transform: var(--basic-transform) rotateX(360deg);
+            transform: var(--basic-transform) rotateX(360deg);
+  }
+}
+@keyframes rotate {
+  0%,
+    12% {
+    -webkit-transform: var(--basic-transform) rotateX(0deg);
+            transform: var(--basic-transform) rotateX(0deg);
+  }
+  38%,
+    62% {
+    -webkit-transform: var(--basic-transform) rotateX(180deg);
+            transform: var(--basic-transform) rotateX(180deg);
+  }
+  88%,
+    100% {
+    -webkit-transform: var(--basic-transform) rotateX(360deg);
+            transform: var(--basic-transform) rotateX(360deg);
+  }
+}
+.cube {
+  position: absolute;
+  top: 0;
+  left: -.5em;
+  width: 1em;
+  height: 1em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.cube:nth-of-type(2) {
+  top: unset;
+  bottom: 0;
+}
+.cube .o {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--o-color);
+  transform: var(--o-dir) translateZ(calc(var(--o-offset)));
+}
+.cube .o:nth-of-type(3n + 0) {
+  --o-dir: rotateX(90deg);
+  --o-color: #1e1e1e;
+}
+.cube .o:nth-of-type(3n + 1) {
+  --o-dir: rotateZ(90deg);
+  --o-color: #fafafa;
+}
+.cube .o:nth-of-type(3n + 2) {
+  --o-dir: rotateY(90deg);
+  --o-color: #1eb4e6;
+}
+.cube .o:nth-of-type(odd) {
+  --o-offset: .5em;
+}
+.cube .o:nth-of-type(even) {
+  --o-offset: -.5em;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
+.intro {
+  width: 90%;
+  max-width: 50rem;
+  padding-top: .5em;
+  padding-bottom: 1rem;
+  margin: 0 auto 1em;
+  font-size: calc(1rem + 2vmin);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: serif;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.info {
+  margin: auto 0 0;
+  padding: 1em;
+  font-size: .9em;
+  font-style: italic;
+  font-family: serif;
+  text-align: right;
+  opacity: .75;
+}
+.info a {
+  color: inherit;
+}
+/**
+ * Horizontal Type Line Behind Text
+ * Inspired by this discussion @ CSS-Tricks: https://css-tricks.com/forums/topic/css-trick-for-a-horizontal-type-line-behind-text/#post-151970
+ * Available on jsFiddle: http://jsfiddle.net/ericrasch/jAXXA/
+ * Available on Dabblet: http://dabblet.com/gist/2045198
+ * Available on GitHub Gist: https://gist.github.com/2045198
+ */
+h2 {
+  font: 33px sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.background {
+  position: relative;
+  z-index: 1;
+}
+h2.background:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+}
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+h2.double:after {
+  border-bottom: 1px solid blue;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  -moz-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.no-background {
+  position: relative;
+  overflow: hidden;
+}
+h2.no-background span {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  position: relative;
+  padding: 0 20px;
+}
+h2.no-background span:before,
+h2.no-background span:after {
+  content: '';
+  display: block;
+  width: 1000px;
+  position: absolute;
+  top: 0.73em;
+  border-top: 1px solid red;
+}
+h2.no-background span:before {
+  right: 100%;
+}
+h2.no-background span:after {
+  left: 100%;
+}
+h2.no-span {
+  display: table;
+  white-space: nowrap;
+}
+h2.no-span:before,
+h2.no-span:after {
+  border-top: 1px solid green;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+h2.no-span:before {
+  right: 1.5%;
+}
+h2.no-span:after {
+  left: 1.5%;
+}
