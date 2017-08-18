@@ -1,39 +1,13 @@
 <html>
 	<head>
-		<title>Think by nothing</title>
+		<title>Think bu nothing</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		
-		<script src="/html/js/jquery-1.6.4.min.js"></script>
-    		<script src="/html/js/lib/moment.min.js"></script>
-    		<script src="/html/js/jquery.rss.js"></script>
-    		<script>
 
-      		jQuery(function($) {
-        		$("#rss-feeds").rss("https://gnusocial.net/api/statuses/friends_timeline/pensar1984.rss", {
-          		limit: 2,
-          		effect: 'slideFastSynced'
-        		})
-      		})
-		jQuery(function($) {
-                        $("#rss-feed2").rss("http://newsrss.bbc.co.uk/rss/spanish/international/rss.xml", {
-                        limit: 2,
-                        effect: 'slideFastSynced'
-                        })
-                })
-		jQuery(function($) {
-                        $("#rss-feed3").rss("http://www.eluniversal.com.mx/rss/computo.xml", {
-                        limit: 2,
-                        effect: 'slideFastSynced'
-                        })
-                })
-    		</script>
-
-
-
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
@@ -77,10 +51,10 @@
 				<p>Esta es <strong>mi web de contacto</strong></p>
 				<hr />
 				<div class="row">
-					<section class="6u">
-						<p><strong><h1>Computacion</h1></strong></p>
-						<div id="rss-feed3"></div>
-                                                </div>
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-briefcase"></span></span>
+						<h3>Informacion corta</h3>
+						<p>Aqui tiene que ir la poca inforacion.</p>
 						<a href="#" class="button button-style1">Read More</a>
 					</section>
 
@@ -94,23 +68,20 @@
 
 				<div class="row">
 					<section class="6u">
-						<div>
-                                                <h1>Noticias</h1>
-                                                <div id="rss-feed2"></div>
-                                                </div>
-                                                <header>
-                                                        <h2>del mundo</h2>
-                                                </header>
-
+						<IFRAME src="https://gs.smuglo.li/safebot" frameborder="No" style="FILTER: chroma(color=#FFFFFF)" allowtransparency="true">
+</IFRAME> 
+						<header>
+							<h2>Hola</h2>
+						</header>
+						<p>Hola de nueva</p>
 					</section>	
 					<section class="6u">
-						<div>
-      						<h1>Noticias</h1>
-      						<div id="rss-feeds"></div>
-    						</div>
+						<IFRAME src="https://gs.smuglo.li/safebot" frameborder="No" style="FILTER: chroma(color=#FFFFFF)" allowtransparency="true">
+</IFRAME> 
 						<header>
-							<h2>de gnusocial</h2>
+							<h2>Mi gnusocail</h2>
 						</header>
+						<p>Gnusocials</p>
 					</section>				
 				</div>
 			
@@ -138,8 +109,7 @@
 						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
 						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="mailto:colegio4497@disroot.org">mail<span>colegio4497@disroot.org</span></a></li>
-						
+						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
 					</ul>
 				</section>
 			</div>
