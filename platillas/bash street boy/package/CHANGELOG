@@ -1,0 +1,13 @@
+### bash-street-boys-and-girls.com - version: 1.0.0 ###
+- Games:
+ - TicTacToe: TicTacToe game
+ - Piedra Papel Tijera: Piedra Papel Tijera game
+ - Sudoku: Sudoku random tester
+- Services:
+ - PeerJS: Webcam secure calls
+ - Wave: Download and play music from youtube
+ - File: Share and download files with webtorrent
+ - XMPP: Join with xmpp account to some MUCs
+- External services:
+ - Pad: Etherpad free
+ - Scrumblr: Scrum method board

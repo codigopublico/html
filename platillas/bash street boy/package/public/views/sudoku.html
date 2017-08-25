@@ -1,0 +1,10 @@
+<div class="col-md-5 col-md-offset-4">
+    <div ng-repeat="row in sudoku track by $index" class="col-md-12" ng-init="rowindex = $index">
+        <input ng-repeat="item in row track by $index" onchange="angular.element(this).scope().testKey(angular.element(this).scope().rowindex, angular.element(this).scope().$index, this.value)" class="col-md-1 field"
+            placeholder="?" value="{{item || '?'}}" ng-class="(($index>2 && $index<6 && rowindex<3) || (($index>5 || $index<3) && rowindex<6 && rowindex>2) || ($index>2 && $index<6 && rowindex>5)) ? 'field-none' : 'field'"
+        />
+    </div>
+</div>
+<p class="col-md-12 sudoku-button">
+    <button ng-click="loadSudoku()" class="btn btn-{{button}}" ng-if="text === 'NO puede resolverse' ? button = 'danger' : button = 'success'">{{text}}</button>
+</p>

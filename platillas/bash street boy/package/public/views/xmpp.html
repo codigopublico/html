@@ -1,0 +1,21 @@
+<div class="col-md-12">
+    <p>
+        <span class="fa fa-user-circle"></span> <input ng-model="username" type="text" placeholder="username@xmpp.server" />
+        <span class="fa fa-key"></span> <input ng-model="password" type="password" placeholder="password" />
+    </p>
+    <p>
+        <span class="fa fa-list"></span> <select ng-model="muc" ng-change="connect(username, password, muc)">
+            <option value="elbinario@salas.xmpp.elbinario.net">elbinario@salas.xmpp.elbinario.net</option>
+            <option value="hacklab@grupo.ingobernable.net">hacklab@grupo.ingobernable.net</option>
+        </select>
+    </p>
+    <p ng-show="connected">
+        <span class="fa fa-pencil"></span> <input ng-model="message" placeholder="type something..." />
+        <button class="btn btn-primary" ng-click="sendMessage(message)">Send</button>
+    </p>
+    <div>
+        <ul class="chatlist">
+            <li ng-repeat="(key, val) in messages | orderBy:'key':true track by $index">{{val}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #909090;
+    background-color: #303030;
+    border: 1px solid #909090;
+    border-radius: 25px;
+    margin: 2%;
+    padding-top: 2%;
+}
+.title {
+    margin-bottom: 1%;
+}
+.title a, .title a:hover, .title a:visited {
+    color: #909090;
+}
+.nav > li {
+    display: inline-block;
+}
+.nav > li > a, .nav > li > a:visited {
+    color: white;
+    background-color: #909090;
+    border-radius: 5px;
+}
+.nav > li > a:hover {
+    background-color: #ccc;
+}
+.navbar-button {
+    margin-top: 1%;
+}
+.javascript, .nodejs {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+}
+.nodejs {
+    background-color: white;
+}
+footer {
+    margin-top: 2em;
+}
+.content {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style: none;
+    padding: 0px;
+}
+.item {
+    font-size: 3em;
+}
+.video video {
+    margin: 2%;
+}
+.text-jumbo {
+    font-size: 10em;
+}
+#waveform, .sudoku-button {
+    padding: 2em 0em 2em 0em;
+}
+.spin {
+    padding: 3%;
+    font-size: 6em;
+}
+.field {
+    background-color: white;
+    border: 0px;
+    text-align: center;
+}
+.field-none {
+    background: none;
+}
+.chat, .chatlist {
+    padding-top: 2%;
+}
+.chatlist {
+    list-style: none;
+}
+.chatlist li {
+    margin-left: -40px;
+}
+.holder {
+    border: dotted #909090 3px;
+    border-radius: 25px;
+    min-height: 150px;
+    height: 150px;
+}
+.white-border {
+    border: solid white 3px;
+}

@@ -1,0 +1,19 @@
+<div class="container">
+    <span class="fa fa-user-circle"></span> <input type="text" name="name" ng-model="name" placeholder="type name to call..."> <button class="btn btn-danger" ng-click="call(name)">Call</button>
+</div>
+<div class="col-md-12 video">
+    <div class="col-md-push-1 col-md-5">
+        <video id="localvideo" class="col-md-12"></video>
+        <h3 class="text-center" ng-show="nick">Me</h3>
+    </div>
+    <div class="col-md-push-1 col-md-5">
+        <video id="remotevideo" class="col-md-12"></video>
+        <h3 class="text-center" ng-show="nick">{{nick}}</h3>
+    </div>
+</div>
+<div class="col-md-12 chat">
+    <span class="fa fa-pencil"></span> <input type="text" name="chat" ng-model="chat" placeholder="type to chat..." /> <button class="btn btn-primary" ng-click="sendChat(chat)">Chat</button>
+    <ul class="chatlist">
+        <li ng-repeat="(key,val) in chatlist | orderBy:'key':true track by $index">{{val}}</li>
+    </ul>
+</div>

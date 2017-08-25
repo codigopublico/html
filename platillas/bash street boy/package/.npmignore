@@ -1,0 +1,9 @@
+/node_modules/
+/npm-debug.log
+/public/bash-street-boys-and-girls.com.tgz
+/public/libs/*
+!/public/libs/.gitignore
+/logs/*.log
+!/logs/.gitignore
+/ssl/*
+!/ssl/.gitignore

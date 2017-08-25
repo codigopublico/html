@@ -1,0 +1,36 @@
+{
+  "name": "bash-street-boys-and-girls.com",
+  "version": "1.0.0",
+  "description": "https://bash-street-boys-and-girls.com",
+  "private": true,
+  "readme": "README.md",
+  "main": "server.js",
+  "scripts": {
+    "install": "bower install && npm run build-stanza && npm run build-ytdl",
+    "start": "node server.js",
+    "build-tgz": "npm pack && mv bash-street-boys-and-girls.com-$(node -pe \"require('./package.json').version\").tgz public/bash-street-boys-and-girls.com.tgz",
+    "build-stanza": "cd public/libs/stanza/ && npm install && make",
+    "build-ytdl": "browserify node_modules/ytdl-core/lib/index.js -s ytdl | uglifyjs -c > public/libs/ytdl.js",
+    "build-certs": "openssl req -nodes -x509 -newkey rsa:4096 -keyout ssl/key.pem -out ssl/cert.pem -days 365 -subj '/CN=bash-street-boys-and-girls.com'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://bash-street-boys-and-girls.com/www"
+  },
+  "author": "bash-street-boys-and-girls.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "browserify": "^14.4.0",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "express-force-ssl": "^0.3.2",
+    "geoip-lite": "^1.2.1",
+    "helmet": "^3.8.1",
+    "morgan": "^1.8.2",
+    "serve-static": "^1.12.4",
+    "uglify": "^0.1.5",
+    "ytdl-core": "^0.14.4"
+  }
+}

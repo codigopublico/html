@@ -1,0 +1,6 @@
+<div class="center-block col-md-4 col-md-push-4">
+    <ul class="content">
+        <li class="item" ng-repeat="b in board track by $index" ng-click="push($index)">{{b || '?'}}</li>
+    </ul>
+    <button class="btn btn-{{b}}" ng-if="result === 'You Lose :(' ? b = 'danger' : result === 'Dead Heat' ? b = 'info' : b = 'success'" ng-show="result" ng-click="restart()">{{result}}</button>
+</div>

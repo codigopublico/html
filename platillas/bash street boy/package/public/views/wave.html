@@ -1,0 +1,10 @@
+<div class="col-md-12">
+    <input ng-model="filewave" type="text" placeholder="https://www.youtube.com/..." /> <button class="btn btn-warning" ng-click="load(filewave)">load</button>
+    <br />with <a href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">C.O.R.S. addon</a>
+    <div class="spin" ng-show="spinner">
+        <span class="spinner fa fa-spinner faa-spin animated"></span>
+    </div>
+    <div id="waveform" ng-show="!spinner"></div>
+    <button class="btn btn-{{b}}" ng-click="playPause()" ng-if="button === 'Play' ? b = 'success' : b = 'primary'"><i class="fa fa-{{icon}}"></i> {{button}}</button>
+    <button class="btn btn-danger" ng-click="downloadFile(filewave)"><i class="fa fa-download"></i> Download</button>
+</div>

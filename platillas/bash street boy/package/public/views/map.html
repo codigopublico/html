@@ -1,0 +1,7 @@
+<div class="col-md-6 col-md-push-3">
+    <h3>Latest visits in 6 hours<br /><small>(updates each 90s)</small></h3>
+    <ng-map zoom="1" center="[0, 0]">
+        <marker ng-repeat="position in positions" position="{{position.ll}}" title="pos: {{position.ll}}" animation="{{animation}}"
+            ng-if="$last ? animation='BOUNCE' : animation='DROP'"></marker>
+    </ng-map>
+</div>
