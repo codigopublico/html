@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bash Street Boys and Girls</title>
+  <base href=".">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/font-awesome-animation/dist/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">  
+  <link rel="stylesheet" href="css/main.css">
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/angular-route/angular-route.min.js"></script>
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="libs/tictactoe-ai/dist/tictactoe.min.js"></script>
+  <script src="libs/peerjs/peer.min.js"></script>
+  <script src="libs/wavesurfer.js/dist/wavesurfer.min.js"></script>
+  <script src="libs/SudokuSolver/src/sudoku-solver.js"></script>
+  <script src="libs/file-saver/FileSaver.min.js"></script>
+  <script src="libs/webtorrent/webtorrent.min.js"></script>
+  <script src="libs/stanza/build/stanzaio.bundle.min.js"></script>
+  <script src="libs/ngmap/build/scripts/ng-map.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyA7IZt-36CgqSGDFK8pChUdQXFyKIhpMBY" async defer></script>
+  <script src="libs/ytdl.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/TicTacToe.js"></script>
+  <script src="js/PeerJS.js"></script>
+  <script src="js/Ppt.js"></script>
+  <script src="js/Wave.js"></script>
+  <script src="js/Sudoku.js"></script>
+  <script src="js/File.js"></script>
+  <script src="js/Xmpp.js"></script>
+  <script src="js/Map.js"></script>
+<script src="server.js"></script>
+</head>
+<body ng-app="App" class="text-center">
+  <header class="row title">
+    <h1><span class="fa fa-terminal faa-flash animated-hover faa-fast"></span> <a href="https://elbinario.net" title="Projected by https://elbinario.net" target="_blank">Bash Street Boys and Girls</a> <span class="fa fa-thumbs-o-up faa-vertical animated-hover"></span></h1>
+  </header>
+  <nav class="navbar navbar-fixed-top navbar-button center-block">
+    <ul class="nav">
+      <li><a href="." title="Tic Tac Toe">Tic Tac Toe</a></li>
+      <li><a href="./ppt" title="Piedra Papel Tijera">Piedra Papel Tijera</a></li>
+      <li><a href="./sudoku" title="Sudoku">Sudoku</a></li>
+      <li class="fa fa-circle-o-notch faa-spin animated-hover faa-fast"></li>
+      <li><a href="./peerjs" title="PeerJS with https">PeerJS</a></li>
+      <li><a href="./wave" title="Wave">Wave</a></li>
+      <li><a href="./file" title="File">File</a></li>
+      <li><a href="./xmpp" title="XMPP">XMPP</a></li>
+      <li><a href="./map" title="XMPP">Map</a></li>
+      <li class="fa fa-circle-o-notch faa-spin animated-hover faa-fast"></li>
+      <li><a href="https://bash-street-boys-and-girls.com:9001" title="Pad" target="_blank">Pad</a></li>
+      <li><a href="https://bash-street-boys-and-girls.com:8080" title="Scrumblr" target="_blank">Scrumblr</a></li>
+      <li><a href="https://bash-street-boys-and-girls.com:3000" title="Mail" target="_blank">Mail</a></li>
+    </ul>
+  </nav>
+  <section ng-view class="row"></section>
+  <footer class="row">
+    <h5><span class="fa fa-angle-double-left"></span> <meme></meme> <span class="fa fa-angle-double-right"></span></span></h5>
+    <h6><input type="checkbox" ng-model="voice" ng-init="voice=false" /> Voice <span class="fa fa-commenting"></span></h6>
+    <h4><span class="fa fa-code faa-tada animated-hover"></span> with <span class="fa fa-heart faa-pulse animated-hover"></span> by <img alt="javascript" class="javascript" src="img/javascript.svg" /> and <img alt="nodejs" class="nodejs" src="img/nodejs-icon.svg" /></h4>
+    <h5><b>DNSCrypt:</b> 'bash-street-boys-and-girls.com,bash-street-boys-and-girls.com,Bash Street Boys and Girls DNSCrypt server,Anycast,,https://bash-street-boys-and-girls.com,1,no,yes,no,37.228.134.139:5353,2.dnscrypt-cert.bash-street-boys-and-girls.com,C5D9:595B:5120:A907:8CE2:0987:CC67:E44D:0B5D:910D:FAB1:3B4E:9FC0:A27B:1388:E8DD,'</h5>
+    <h5><span class="fa fa-quote-left"></span> This project can be <a href="https://bash-street-boys-and-girls.com/bash-street-boys-and-girls.com.tgz" title="download project">downloaded</a> and <a href="git://bash-street-boys-and-girls.com/www" title="clone project">cloned</a> with <u>freedom</u> - 2017 <span class="fa fa-quote-right"></span></h5>
+  </footer>
+</body>
+</html>
