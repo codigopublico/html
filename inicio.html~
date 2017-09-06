@@ -8,7 +8,7 @@
 		<script src="js/jquery-1.6.4.min.js"></script>
     		<script src="js/lib/moment.min.js"></script>
     		<script src="js/jquery.rss.js"></script>
-    		<script src="js/jquery.rss.js">
+    		<script>
 
       		jQuery(function($) {
         		$("#rss-feeds").rss("https://gnusocial.net/api/statuses/friends_timeline/pensar1984.rss", {
