@@ -29,9 +29,6 @@
                         })
                 })
     		</script>
-
-
-
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
@@ -117,7 +114,7 @@
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>Redes sociales y foros.</blockquote>
+					<blockquote>Redes sociales y foros.</blockquote><!-- Aqui poner un foro en php para entrar. -->
 				</section>
 			</div>
 		</div>

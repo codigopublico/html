@@ -28,8 +28,8 @@
           transform: var(--basic-transform) rotateX(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: rotate 10s linear infinite;
-          animation: rotate 10s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
   -webkit-animation-delay: calc(var(--delay));
           animation-delay: calc(var(--delay));
 }
