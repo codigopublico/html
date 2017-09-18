@@ -127,7 +127,7 @@
 						<h2>Get in touch</h2>
 						<span class="byline">En un click</span>
 					</header>
-					<ul class="contact">
+					<ul class="contact"><!-- Tengo que ponerme a tope con las redes sociales -->
 						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
 						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
