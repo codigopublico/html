@@ -83,7 +83,7 @@ Poner en esta linea el link de la descripcion.--><ul class="default">
 								<section class="6u">
 									<ul class="default">
 										<li><a href="libros/CPP21.23380549.pdf">Programacion en c++</a></li>
-										<li><a href="#">Javascript</a></li>
+										<li><a href="#">Javascript</a></li><!-- Falta el link del libro de wikibooks. -->
 										<li><a href="#">Libro 3</a></li>
 										<li><a href="#">Libro 4</a></li>
 										<li><a href="#">Libro 5</a></li>
@@ -106,7 +106,7 @@ Poner en esta linea el link de la descripcion.--><ul class="default">
 							</header>
 							<ul class="container">
 								<section>
-									<li class="posted">libtorrent</li>
+									<li class="posted">libtorrent</li><!-- Aqui tiene que ir todo el codigo en la githup ademas de las dependecias --> 
 								</section>
 							</ul>
 							<ul class="container">
