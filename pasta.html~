@@ -1,35 +1,51 @@
-<!DOCTYPE HTML>
-<!--
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-Esta paguina es de libros.
--->
 <html>
-	<title>Think by nothing</title>
+	<head>
+		<title>Think by nothing</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<script type="text/javascript"src="js/skel.min.js"></script>
-		<script type="text/javascript"src="js/skel-panels.min.js"></script>
-		<script type="text/javascript"src="js/init.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script type="text/javascript"  src="js/jquery-1.6.4.min.js"></script> <!-- Falta subir la version de jquerry -->
+    		<script type="text/javascript"  src="js/lib/moment.min.js"></script>
+    		<script type="text/javascript" type="text/javascript" src="js/jquery.rss.js"></script>
+    		<script type="text/javascript">
+
+      		jQuery(function($) {
+        		$("#rss-feeds").rss("https://gnusocial.net/api/statuses/friends_timeline/pensar1984.rss", {
+          		limit: 2,
+          		effect: 'slideFastSynced'
+        		})
+      		})
+		jQuery(function($) {
+                        $("#rss-feed2").rss("http://newsrss.bbc.co.uk/rss/spanish/international/rss.xml", {
+                        limit: 2,
+                        effect: 'slideFastSynced'
+                        })
+                })
+		jQuery(function($) {
+                        $("#rss-feed3").rss("http://www.eluniversal.com.mx/rss/computo.xml", {
+                        limit: 2,
+                        effect: 'slideFastSynced'
+                        })
+                })
+		jQuery(function($) {
+                        $("#rss-dia").rss("", {
+                        limit: 2,
+                        effect: 'slideFastSynced'
+                        })
+                })
+    		</script>
+		<script  type="text/javascript"src="js/skel.min.js"></script>
+		<script type="text/javascript" src="js/skel-panels.min.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		<fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-		<script type="text/javascript"src="js/jquery-1.6.4.min.js"></script>
-    		<script type="text/javascript"src="js/lib/moment.min.js"></script>
-    		<script type="text/javascript"src="js/jquery.rss.js"></script>
-		<script type="text/javascript"src="js/skel.min.js"></script>
-		<script type="text/javascript"src="js/skel-panels.min.js"></script>
-		<script type="text/javascript"src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
+	</head>
+	<body class="homepage">
+
 	<!-- Header -->
 		<div id="header">
 			<div id="nav-wrapper"> 
@@ -52,89 +68,36 @@ Esta paguina es de libros.
 			</div>
 		</div>
 
+	<!-- Featured -->
+		
 	<!-- Main -->
-		<div id="main">
-			<div class="main">
-				<div class="row">
-
-					<!-- Content -->
-					<div id="content" class="8u skel-cell-important">
-						<section>
-							<header>
-								<h2>Historia</h2>
-								<span class="byline">video_descriptivo</span>
-							</header>
-							<!-- Aqui tiene que ir el codigo que destaco lo puedo hacer con un iframe pero lo interare hacer con css o html i sino con javascript 
-Poner en esta linea el link de la descripcion.--><ul class="default">
-							<li class=default><embed src="./videos/dinero.mp4" class="default">video_descriptivo</li>
-							<li class=default><span class="default">Descripcion</span></li>
-							<li class=4u><embed src=./dcodigo/historia_del_dinero class="6u"></li><!--Aqui tiene que ir el codigo pero en la githup.-->
-						</ul>
-
-						</section>
-					</div>
-
-					<!-- Sidebar -->
-					<div id="sidebar" class="4u">
-						<section>
-							<header>
-								<h2>Libros destacados</h2>
-							</header>
-							<div class="row">
-								<section class="6u">
-									<ul class="default">
-										<li><a href="libros/CPP21.23380549.pdf">Programacion en c++</a></li>
-										<li><a href="#">Javascript</a></li><!-- Falta el link del libro de wikibooks. -->
-										<li><a href="#">Libro 3</a></li>
-										<li><a href="#">Libro 4</a></li>
-										<li><a href="#">Libro 5</a></li>
-									</ul>
-								</section>
-								<section class="6u">
-									<ul class="default">
-										<li><a href="libros/CPP21.23380549.pdf"> Descripcion: Libro de POO</a></li>
-										<li><a href="#">Descripcion:</a></li>
-										<li><a href="#">Descripcion:</a></li>
-										<li><a href="#">Descripcion:</a></li>
-										<li><a href="#">Descripcion:</a></li>
-									</ul>
-								</section>
-							</div>
-						</section>
-						<section>
-							<header>
-								<h2>El codigo desastre:</h2>
-							</header>
-							<ul class="container">
-								<section>
-									<li class="posted">libtorrent</li><!-- Aqui tiene que ir todo el codigo en la githup ademas de las dependecias --> 
-								</section>
-							</ul>
-							<ul class="container">
-								<section>
-									<li class="posted"><a herf="#">documentacion</li><!-- Aqui tiene que ir la documentacion externa o sea la web -->
-									<li class="posted"><a href="#">video</a></li>
-									<li class="posted">May 18, 2014  |  (10 )  Comments</li>
-									<li><a href="#">Carpediem hermano</a></li>
-								</section>
-							</ul>
-						</section>
-					</div>
-					
-				</div>
+		<div id="featured">
+			<div class="container">
+				<header>
+					<h2>Documentacion sobre  el dinero</h2>
+				</header>
+				<p><strong>Primera parte:</strong>
+				
+				<embed src="./videos/dinero.mp4" width=352 height=240>
+				<embed src="./dcodigo/historia_del_dinero" width=352 height=240>
+				
+				
+				
+				</p>
+				<hr />
+				
 			</div>
 		</div>
-	<!-- /Main -->
+		
 
 	<!-- Tweet -->
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>El tiempo escapa entre bambalinas.....</blockquote>
+					<blockquote>Redes sociales y foros.</blockquote><!-- Aqui poner un foro en php para entrar. -->
 				</section>
 			</div>
 		</div>
-	<!-- /Tweet -->
 
 	<!-- Footer -->
 		<div id="footer">
@@ -144,7 +107,7 @@ Poner en esta linea el link de la descripcion.--><ul class="default">
 						<h2>Get in touch</h2>
 						<span class="byline">En un click</span>
 					</header>
-					<ul class="contact">
+					<ul class="contact"><!-- Tengo que ponerme a tope con las redes sociales -->
 						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
 						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
@@ -155,11 +118,5 @@ Poner en esta linea el link de la descripcion.--><ul class="default">
 				</section>
 			</div>
 		</div>
-	<!-- /Footer -->
-
-	<!-- Copyright -->
-
-
-
 	</body>
 </html>
