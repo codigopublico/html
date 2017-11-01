@@ -28,7 +28,7 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		<script type="text/javascript"src="js/jquery.rss.js">
+		<script type="text/javascript">
 
       		jQuery(function($) {
         		$("#gnu").rss("https://gnusocial.net/api/statuses/friends_timeline/pensar1984.rss", {
@@ -99,7 +99,7 @@
 								</section>
 								<section class="6u">
 									<ul class="default">
-										<li><a href="#">Clave pgp</a></li>
+										<li><a href="./claves/pgp.asc">Clave pgp</a></li>
 										<li><a href="#">matrix</a></li>
 									</ul>
 								</section>
